@@ -1,0 +1,24 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 37FF71064E57343610991843
+ST-LINK FW  : V2J48S7
+Board       : --
+Voltage     : 3.30V
+SWD freq    : 950 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x448
+Revision ID : Rev Z
+Device name : STM32F07x
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0
+BL Version  : 0xA1
+
+
+MCU Reset
+
+Software reset is performed
+Core run

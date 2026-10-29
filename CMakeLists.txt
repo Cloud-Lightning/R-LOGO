@@ -37,6 +37,11 @@ enable_language(C ASM)
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME})
 
+option(LED_LOW_LOAD_TEST "Use CAN 03/04 for one/three dim LEDs instead of full logos" OFF)
+if(LED_LOW_LOAD_TEST)
+    target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE LED_LOW_LOAD_TEST=1)
+endif()
+
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
 

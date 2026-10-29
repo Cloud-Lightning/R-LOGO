@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "ws2812_pwm.h"
+#include "can.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -146,6 +147,11 @@ void SysTick_Handler(void)
 void DMA1_Channel2_3_IRQHandler(void)
 {
   WS2812_DMA_IRQHandler();
+}
+
+void CEC_CAN_IRQHandler(void)
+{
+  HAL_CAN_IRQHandler(&hcan);
 }
 
 /* USER CODE END 1 */

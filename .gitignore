@@ -1,0 +1,39 @@
+# Generated builds and editor state
+/build/
+/dist/
+/.upload-staging/
+/.workbuddy/
+/_taobao_cache/
+/MDK-ARM/F072/
+/MDK-ARM/*.uvguix.*
+/MDK-ARM/*.uvoptx
+/MDK-ARM/*.lst
+/MDK-ARM/JLinkLog.txt
+/MDK-ARM/JLinkSettings.ini
+**/__pycache__/
+*.py[cod]
+*.log.tmp
+
+# Vendor CAN DLLs are extracted locally from the user-supplied official archive
+/tools/can_vendor/**
+!/tools/can_vendor/README.md
+
+# Original unknown flash and duplicate raw memory/readback captures remain local
+/artifacts/can-bringup/flash_before.bin
+/artifacts/can-bringup/flash_final_readback.bin
+/artifacts/can-bringup/acceptance_*.bin
+/artifacts/led-low-load/flash_readback.bin
+/artifacts/led-low-load/before.bin
+/artifacts/led-low-load/stage_*_off.bin
+/artifacts/led-low-load/stage_*_one_red.bin
+/artifacts/led-low-load/stage_*_three_blue.bin
+
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+/artifacts/can-bringup/acceptance_expected_flash.bin
+/artifacts/can-bringup/acceptance_readback_flash.bin

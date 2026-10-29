@@ -1,0 +1,86 @@
+{
+  "adapter": {
+    "hardware": "USBCAN-II",
+    "serial": "31F0002C642",
+    "channels": 2,
+    "firmware": "0x341"
+  },
+  "channel": 0,
+  "bitrate": 1000000,
+  "submitted": 10,
+  "matched": 10,
+  "failed": [],
+  "received": [
+    {
+      "id": "0x601",
+      "data": "03 00 00 00 00 a5 5a c3",
+      "extended": false,
+      "remote": false,
+      "timestamp": 7405662
+    },
+    {
+      "id": "0x601",
+      "data": "04 01 00 00 00 a5 5a c3",
+      "extended": false,
+      "remote": false,
+      "timestamp": 7406578
+    },
+    {
+      "id": "0x601",
+      "data": "03 02 00 00 00 a5 5a c3",
+      "extended": false,
+      "remote": false,
+      "timestamp": 7407519
+    },
+    {
+      "id": "0x601",
+      "data": "04 03 00 00 00 a5 5a c3",
+      "extended": false,
+      "remote": false,
+      "timestamp": 7408444
+    },
+    {
+      "id": "0x601",
+      "data": "03 04 00 00 00 a5 5a c3",
+      "extended": false,
+      "remote": false,
+      "timestamp": 7409373
+    },
+    {
+      "id": "0x601",
+      "data": "04 05 00 00 00 a5 5a c3",
+      "extended": false,
+      "remote": false,
+      "timestamp": 7410309
+    },
+    {
+      "id": "0x601",
+      "data": "03 06 00 00 00 a5 5a c3",
+      "extended": false,
+      "remote": false,
+      "timestamp": 7411216
+    },
+    {
+      "id": "0x601",
+      "data": "04 07 00 00 00 a5 5a c3",
+      "extended": false,
+      "remote": false,
+      "timestamp": 7412122
+    },
+    {
+      "id": "0x601",
+      "data": "03 08 00 00 00 a5 5a c3",
+      "extended": false,
+      "remote": false,
+      "timestamp": 7413052
+    },
+    {
+      "id": "0x601",
+      "data": "04 09 00 00 00 a5 5a c3",
+      "extended": false,
+      "remote": false,
+      "timestamp": 7413974
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,255 @@
+{
+  "flash_match": true,
+  "before": {
+    "uwTick": 698,
+    "g_led_cmd": 0,
+    "g_can_rx_count": 0,
+    "g_led_show_count": 0,
+    "g_can_cmd_count": 0,
+    "g_can_tx_count": 0,
+    "g_can_error_count": 0,
+    "g_can_last_error": 0,
+    "g_can_last_error_esr": 0,
+    "g_can_reply_drop_count": 0,
+    "g_led_low_load_mode": 1,
+    "g_led_test_lit_count": 0,
+    "g_ws2812_complete_count": 1,
+    "can_esr": 0,
+    "core_running": true
+  },
+  "stages": [
+    {
+      "name": "OFF",
+      "command": 0,
+      "expected_lit_count": 0,
+      "accepted": 1,
+      "diagnostic_accepted": 1,
+      "replies": [
+        {
+          "id": "0x601",
+          "data": "d3 00 00 01 03 10 72 c8",
+          "extended": false,
+          "remote": false,
+          "timestamp": 17860520
+        }
+      ],
+      "roundtrip_ok": true,
+      "mcu": {
+        "uwTick": 1304,
+        "g_led_cmd": 0,
+        "g_can_rx_count": 2,
+        "g_led_show_count": 0,
+        "g_can_cmd_count": 1,
+        "g_can_tx_count": 1,
+        "g_can_error_count": 0,
+        "g_can_last_error": 0,
+        "g_can_last_error_esr": 0,
+        "g_can_reply_drop_count": 0,
+        "g_led_low_load_mode": 1,
+        "g_led_test_lit_count": 0,
+        "g_ws2812_complete_count": 1,
+        "can_esr": 0,
+        "core_running": true
+      },
+      "encoded_lit_count": 0,
+      "full_buffer_matches": true,
+      "counter_delta": {
+        "g_can_rx_count": 2,
+        "g_can_cmd_count": 1,
+        "g_led_show_count": 0,
+        "g_ws2812_complete_count": 0,
+        "g_can_error_count": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "ONE_RED",
+      "command": 3,
+      "expected_lit_count": 1,
+      "accepted": 1,
+      "diagnostic_accepted": 1,
+      "replies": [
+        {
+          "id": "0x601",
+          "data": "d3 03 01 01 03 10 72 c8",
+          "extended": false,
+          "remote": false,
+          "timestamp": 17879676
+        }
+      ],
+      "roundtrip_ok": true,
+      "mcu": {
+        "uwTick": 3219,
+        "g_led_cmd": 3,
+        "g_can_rx_count": 4,
+        "g_led_show_count": 1,
+        "g_can_cmd_count": 2,
+        "g_can_tx_count": 2,
+        "g_can_error_count": 0,
+        "g_can_last_error": 0,
+        "g_can_last_error_esr": 0,
+        "g_can_reply_drop_count": 0,
+        "g_led_low_load_mode": 1,
+        "g_led_test_lit_count": 1,
+        "g_ws2812_complete_count": 2,
+        "can_esr": 0,
+        "core_running": true
+      },
+      "encoded_lit_count": 1,
+      "full_buffer_matches": true,
+      "counter_delta": {
+        "g_can_rx_count": 2,
+        "g_can_cmd_count": 1,
+        "g_led_show_count": 1,
+        "g_ws2812_complete_count": 1,
+        "g_can_error_count": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "OFF",
+      "command": 0,
+      "expected_lit_count": 0,
+      "accepted": 1,
+      "diagnostic_accepted": 1,
+      "replies": [
+        {
+          "id": "0x601",
+          "data": "d3 00 02 01 03 10 72 c8",
+          "extended": false,
+          "remote": false,
+          "timestamp": 17938721
+        }
+      ],
+      "roundtrip_ok": true,
+      "mcu": {
+        "uwTick": 9120,
+        "g_led_cmd": 0,
+        "g_can_rx_count": 6,
+        "g_led_show_count": 2,
+        "g_can_cmd_count": 3,
+        "g_can_tx_count": 3,
+        "g_can_error_count": 0,
+        "g_can_last_error": 0,
+        "g_can_last_error_esr": 0,
+        "g_can_reply_drop_count": 0,
+        "g_led_low_load_mode": 1,
+        "g_led_test_lit_count": 0,
+        "g_ws2812_complete_count": 3,
+        "can_esr": 0,
+        "core_running": true
+      },
+      "encoded_lit_count": 0,
+      "full_buffer_matches": true,
+      "counter_delta": {
+        "g_can_rx_count": 2,
+        "g_can_cmd_count": 1,
+        "g_led_show_count": 1,
+        "g_ws2812_complete_count": 1,
+        "g_can_error_count": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "THREE_BLUE",
+      "command": 4,
+      "expected_lit_count": 3,
+      "accepted": 1,
+      "diagnostic_accepted": 1,
+      "replies": [
+        {
+          "id": "0x601",
+          "data": "d3 04 03 01 03 10 72 c8",
+          "extended": false,
+          "remote": false,
+          "timestamp": 17957867
+        }
+      ],
+      "roundtrip_ok": true,
+      "mcu": {
+        "uwTick": 11031,
+        "g_led_cmd": 4,
+        "g_can_rx_count": 8,
+        "g_led_show_count": 3,
+        "g_can_cmd_count": 4,
+        "g_can_tx_count": 4,
+        "g_can_error_count": 0,
+        "g_can_last_error": 0,
+        "g_can_last_error_esr": 0,
+        "g_can_reply_drop_count": 0,
+        "g_led_low_load_mode": 1,
+        "g_led_test_lit_count": 3,
+        "g_ws2812_complete_count": 4,
+        "can_esr": 0,
+        "core_running": true
+      },
+      "encoded_lit_count": 3,
+      "full_buffer_matches": true,
+      "counter_delta": {
+        "g_can_rx_count": 2,
+        "g_can_cmd_count": 1,
+        "g_led_show_count": 1,
+        "g_ws2812_complete_count": 1,
+        "g_can_error_count": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "OFF",
+      "command": 0,
+      "expected_lit_count": 0,
+      "accepted": 1,
+      "diagnostic_accepted": 1,
+      "replies": [
+        {
+          "id": "0x601",
+          "data": "d3 00 04 01 03 10 72 c8",
+          "extended": false,
+          "remote": false,
+          "timestamp": 18016910
+        }
+      ],
+      "roundtrip_ok": true,
+      "mcu": {
+        "uwTick": 16932,
+        "g_led_cmd": 0,
+        "g_can_rx_count": 10,
+        "g_led_show_count": 4,
+        "g_can_cmd_count": 5,
+        "g_can_tx_count": 5,
+        "g_can_error_count": 0,
+        "g_can_last_error": 0,
+        "g_can_last_error_esr": 0,
+        "g_can_reply_drop_count": 0,
+        "g_led_low_load_mode": 1,
+        "g_led_test_lit_count": 0,
+        "g_ws2812_complete_count": 5,
+        "can_esr": 0,
+        "core_running": true
+      },
+      "encoded_lit_count": 0,
+      "full_buffer_matches": true,
+      "counter_delta": {
+        "g_can_rx_count": 2,
+        "g_can_cmd_count": 1,
+        "g_led_show_count": 1,
+        "g_ws2812_complete_count": 1,
+        "g_can_error_count": 0
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "physical_verification": {
+    "confirmed_by_user": true,
+    "sequence": [
+      "OFF",
+      "ONE_RED",
+      "OFF",
+      "THREE_BLUE",
+      "OFF"
+    ],
+    "user_statement": "全灭 → 1 颗红灯 → 全灭 → 3 颗蓝灯 → 全现在对了"
+  },
+  "final_state": "OFF"
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "Path": ".\\artifacts\\led-low-load\\F072_CAN_1LED_3LED.bin",
+    "Hash": "B6FF7E5C6B21EAAD891537B94DC3D7B1311109B5DA0410412765A3D20CF8D803"
+  },
+  {
+    "Path": ".\\artifacts\\led-low-load\\F072_CAN_1LED_3LED.elf",
+    "Hash": "69BE73E5BBF63D66413850319F56377BD6632D4AB481C9C1EEFB9D98CAB98651"
+  }
+]

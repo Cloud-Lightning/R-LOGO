@@ -14,6 +14,7 @@
 static DMA_HandleTypeDef s_tim1_ch1_dma;
 static uint16_t s_pwm_buffer[WS2812_BUFFER_WORDS];
 static volatile uint8_t s_busy;
+volatile uint32_t g_ws2812_complete_count;
 
 static void WS2812_AppendByte(uint8_t value, uint16_t *index)
 {
@@ -137,6 +138,31 @@ HAL_StatusTypeDef WS2812_Clear(uint16_t count)
   return WS2812_StartTransfer(length);
 }
 
+HAL_StatusTypeDef WS2812_ShowPrefix(uint16_t lit_count, ws2812_rgb_t colour)
+{
+  uint16_t index = 0U;
+  if (lit_count > WS2812_LED_COUNT)
+  {
+    return HAL_ERROR;
+  }
+  if (s_busy != 0U)
+  {
+    return HAL_BUSY;
+  }
+  /* Always clock the entire panel so old colours cannot remain downstream. */
+  for (uint16_t pixel = 0U; pixel < WS2812_LED_COUNT; pixel++)
+  {
+    WS2812_AppendByte((pixel < lit_count) ? colour.g : 0U, &index);
+    WS2812_AppendByte((pixel < lit_count) ? colour.r : 0U, &index);
+    WS2812_AppendByte((pixel < lit_count) ? colour.b : 0U, &index);
+  }
+  for (uint16_t reset = 0U; reset < WS2812_RESET_SLOTS; reset++)
+  {
+    s_pwm_buffer[index++] = 0U;
+  }
+  return WS2812_StartTransfer(index);
+}
+
 uint8_t WS2812_IsBusy(void)
 {
   return s_busy;
@@ -154,5 +180,6 @@ void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
     (void)HAL_TIM_PWM_Stop_DMA(htim, TIM_CHANNEL_1);
     __HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_1, 0U);
     s_busy = 0U;
+    g_ws2812_complete_count++;
   }
 }

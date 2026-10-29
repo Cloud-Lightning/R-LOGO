@@ -1,0 +1,36 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.19.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 37FF71064E57343610991843
+ST-LINK FW  : V2J48S7
+Board       : --
+Voltage     : 3.30V
+SWD freq    : 950 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x448
+Revision ID : Rev Z
+Device name : STM32F07x
+Flash size  : 64 KBytes
+Device type : MCU
+Device CPU  : Cortex-M0
+BL Version  : 0xA1
+
+
+UPLOADING ...
+  File          : C:\Users\12715\Downloads\R-LOGO-main - 副本\R-LOGO-main\artifacts\can-bringup\acceptance_before.bin
+  Size          : 84 Bytes
+  Address:      : 0x20000028
+Read progress:
+�������������������������������������������������� 0%�������������������������������������������������� 100%
+Data read successfully
+Time elapsed during read operation is: 00:00:00.002
+
+Reading 32-bit memory content
+  Size          : 32 Bytes
+  Address:      : 0x40006400
+
+0x40006400 : 00010040 00000C08 1C000000 00000000
+0x40006410 : 00000000 00008F0B 00000000 033A0002
+Core is running

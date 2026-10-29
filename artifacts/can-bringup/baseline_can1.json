@@ -1,0 +1,15 @@
+{
+  "adapter": {
+    "hardware": "USBCAN-II",
+    "serial": "31F0002C642",
+    "channels": 2,
+    "firmware": "0x341"
+  },
+  "channel": 0,
+  "bitrate": 1000000,
+  "submitted": 2,
+  "matched": 0,
+  "failed": [],
+  "received": [],
+  "passed": null
+}
